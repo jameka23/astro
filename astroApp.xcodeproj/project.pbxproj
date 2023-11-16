@@ -29,6 +29,7 @@
 		6938E4022AA5512D00E37202 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		694BAAC62B047A1B00D49DF1 /* Houses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Houses.swift; sourceTree = "<group>"; };
 		694BAAC82B04868A00D49DF1 /* Aspects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aspects.swift; sourceTree = "<group>"; };
+		694BAACA2B05A05F00D49DF1 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
 		696FFAED2AB91A6800C233E1 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +47,7 @@
 		6938E3E22AA5141500E37202 = {
 			isa = PBXGroup;
 			children = (
+				694BAACA2B05A05F00D49DF1 /* .gitignore.md */,
 				6938E3ED2AA5141500E37202 /* astroApp */,
 				6938E3EC2AA5141500E37202 /* Products */,
 			);
