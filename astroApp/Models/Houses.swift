@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import UIKit
+
+struct House {
+    var description: String
+}

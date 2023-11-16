@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+struct Planet {
+    let description: String?
+    
+}

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+
+struct Aspect {
+    var description: String
+}
