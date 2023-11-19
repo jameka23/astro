@@ -9,5 +9,7 @@ import Foundation
 import UIKit
 
 struct House {
-    var description: String
+    let id: Int?
+    let description: String?
+
 }

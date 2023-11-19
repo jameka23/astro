@@ -10,5 +10,7 @@ import UIKit
 
 
 struct Aspect {
-    var description: String
+    let id: Int?
+    let description: String?
+    let name: String?
 }

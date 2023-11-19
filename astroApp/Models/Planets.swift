@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 struct Planet {
+    let id: Int?
+    let name: String?
+    let zodiacID: Int?
     let description: String?
-    
 }
