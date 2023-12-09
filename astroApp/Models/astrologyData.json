@@ -1,0 +1,60 @@
+{
+  "Planets": [
+    {"id": 1, "name": "Mercury", "zodiacID": 3, "description": "Represents communication, intellect, and awareness."},
+    {"id": 2, "name": "Venus", "zodiacID": 2, "description": "Symbolizes love, beauty, and money."},
+    {"id": 3, "name": "Earth", "zodiacID": 4, "description": "Represents grounding, stability, and physicality."},
+    {"id": 4, "name": "Mars", "zodiacID": 1, "description": "Associated with energy, assertiveness, and action."},
+    {"id": 5, "name": "Jupiter", "zodiacID": 9, "description": "Signifies luck, growth, and expansion."},
+    {"id": 6, "name": "Saturn", "zodiacID": 10, "description": "Represents responsibility, discipline, and limits."},
+    {"id": 7, "name": "Uranus", "zodiacID": 11, "description": "Symbolizes innovation, change, and uniqueness."},
+    {"id": 8, "name": "Neptune", "zodiacID": 12, "description": "Associated with dreams, intuition, and mysticism."},
+    {"id": 9, "name": "Pluto", "zodiacID": 8, "description": "Represents transformation, power, and renewal."}
+  ],
+  "Houses": [
+    {"id": 1, "name": "First House", "description": "The house of self and appearance."},
+    {"id": 2, "name": "Second House", "description": "The house of possessions and values."},
+    {"id": 3, "name": "Third House", "description": "The house of communication and siblings."},
+    {"id": 4, "name": "Fourth House", "description": "The house of home and family."},
+    {"id": 5, "name": "Fifth House", "description": "The house of creativity and romance."},
+    {"id": 6, "name": "Sixth House", "description": "The house of health and service."},
+    {"id": 7, "name": "Seventh House", "description": "The house of partnerships and marriage."},
+    {"id": 8, "name": "Eighth House", "description": "The house of transformation and sexuality."},
+    {"id": 9, "name": "Ninth House", "description": "The house of philosophy and long-distance travel."},
+    {"id": 10, "name": "Tenth House", "description": "The house of career and reputation."},
+    {"id": 11, "name": "Eleventh House", "description": "The house of friendships and collective activities."},
+    {"id": 12, "name": "Twelfth House", "description": "The house of the subconscious and the unknown."}
+  ],
+  "Aspects": [
+    {"id": 1, "name": "Conjunction", "description": "Planets are in close proximity."},
+    {"id": 2, "name": "Sextile", "description": "Planets are 60 degrees apart."},
+    {"id": 3, "name": "Square", "description": "Planets are 90 degrees apart, indicating challenges and tension."},
+    {"id": 4, "name": "Trine", "description": "Planets are 120 degrees apart, indicating harmony and ease."},
+    {"id": 5, "name": "Opposition", "description": "Planets are 180 degrees apart, reflecting polarity and potential conflict."}
+  ],
+  "Zodiacs": [
+    {"id": 1, "name": "Aries", "description": "The Ram, a fire sign.", "qualityID": "", "signID": ""},
+    {"id": 2, "name": "Taurus", "description": "The Bull, an earth sign.", "qualityID": "", "signID": ""},
+    {"id": 3, "name": "Gemini", "description": "The Twins, an air sign.", "qualityID": "", "signID": ""},
+    {"id": 4, "name": "Cancer", "description": "The Crab, a water sign.", "qualityID": "", "signID": ""},
+    {"id": 5, "name": "Leo", "description": "The Lion, a fire sign.", "qualityID": "", "signID": ""},
+    {"id": 6, "name": "Virgo", "description": "The Virgin, an earth sign.", "qualityID": "", "signID": ""},
+    {"id": 7, "name": "Libra", "description": "The Scales, an air sign.", "qualityID": "", "signID": ""},
+    {"id": 8, "name": "Scorpio", "description": "The Scorpion, a water sign.", "qualityID": "", "signID": ""},
+    {"id": 9, "name": "Sagittarius", "description": "The Archer, a fire sign.", "qualityID": "", "signID": ""},
+    {"id": 10, "name": "Capricorn", "description": "The Goat, an earth sign.", "qualityID": "", "signID": ""},
+    {"id": 11, "name": "Aquarius", "description": "The Water Bearer, an air sign.", "qualityID": "", "signID": ""},
+    {"id": 12, "name": "Pisces", "description": "The Fish, a water sign.", "qualityID": "", "signID": ""}
+  ],
+  "Qualities": [
+    {"id": 1, "name": "Cardinal"},
+    {"id": 2, "name": "Fixed"},
+    {"id": 3, "name": "Mutable"}
+  ],
+  "Signs": [
+    {"id": 1, "name": "Fire"},
+    {"id": 2, "name": "Earth"},
+    {"id": 3, "name": "Air"},
+    {"id": 4, "name": "Water"}
+  ]
+}
+

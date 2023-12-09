@@ -10,6 +10,6 @@ import UIKit
 
 struct House {
     let id: Int?
+    let number: String?
     let description: String?
-
 }

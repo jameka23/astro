@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct Sign {
     let id: Int?
     let name: String?
