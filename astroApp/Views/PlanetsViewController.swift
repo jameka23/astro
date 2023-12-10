@@ -10,14 +10,39 @@ import SwiftUI
 
 class PlanetsViewController: UIViewController {
 
-    let tableView: UITableView? = nil
-    let planetsData: [Planet] = []
+    private var tableView: UITableView = {
+        var tv = UITableView(frame: .zero, style: .plain)
+        tv.translatesAutoresizingMaskIntoConstraints = false
+        return tv
+    }()
+    
+    private var viewModel: PlanetsViewModel? = nil
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .cyan
+        
+        viewModel = PlanetsViewModel()
+        setup()
     }
     
+    private func setup() {
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.title = "Planets"
+        
+        tableView.dataSource = self
+        
+        // add the custom tableviewcell here..register it
+        
+        self.view.addSubview(tableView)
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            tableView.rightAnchor.constraint(equalTo: view.leftAnchor)
+        ])
+    }
 }
 
 extension PlanetsViewController: UITableViewDelegate, UITableViewDataSource {
