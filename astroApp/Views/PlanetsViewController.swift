@@ -58,16 +58,20 @@ extension PlanetsViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PlanetTableViewCell.reuseIdentifier, for: indexPath) as? PlanetTableViewCell else {
             fatalError("Dequeued cell not an instance of CustomTableViewCell.")
         }
-        print(indexPath.row)
         
         if let viewModel = viewModel {
                 let planet = viewModel.planetsData[indexPath.row]
                 cell.planetLabel.text = planet.name
-                // Set other properties of the cell
+                cell.planetImage.image = UIImage(named: planet.img!)
             }
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let selected = viewModel?.planetsData[indexPath.row] {
+            // insert nav logic here for PlanetDetailsView
+        }
+    }
     
 }
 

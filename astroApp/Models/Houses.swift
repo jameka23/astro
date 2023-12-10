@@ -12,4 +12,5 @@ struct House: Codable {
     let id: Int?
     let number: String?
     let description: String?
+    let img: String?
 }

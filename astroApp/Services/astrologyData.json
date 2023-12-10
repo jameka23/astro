@@ -1,60 +1,345 @@
 {
-  "Planets": [
-    {"id": 1, "name": "Mercury", "zodiacID": 3, "description": "Represents communication, intellect, and awareness."},
-    {"id": 2, "name": "Venus", "zodiacID": 2, "description": "Symbolizes love, beauty, and money."},
-    {"id": 3, "name": "Earth", "zodiacID": 4, "description": "Represents grounding, stability, and physicality."},
-    {"id": 4, "name": "Mars", "zodiacID": 1, "description": "Associated with energy, assertiveness, and action."},
-    {"id": 5, "name": "Jupiter", "zodiacID": 9, "description": "Signifies luck, growth, and expansion."},
-    {"id": 6, "name": "Saturn", "zodiacID": 10, "description": "Represents responsibility, discipline, and limits."},
-    {"id": 7, "name": "Uranus", "zodiacID": 11, "description": "Symbolizes innovation, change, and uniqueness."},
-    {"id": 8, "name": "Neptune", "zodiacID": 12, "description": "Associated with dreams, intuition, and mysticism."},
-    {"id": 9, "name": "Pluto", "zodiacID": 8, "description": "Represents transformation, power, and renewal."}
-  ],
-  "Houses": [
-    {"id": 1, "name": "First House", "description": "The house of self and appearance."},
-    {"id": 2, "name": "Second House", "description": "The house of possessions and values."},
-    {"id": 3, "name": "Third House", "description": "The house of communication and siblings."},
-    {"id": 4, "name": "Fourth House", "description": "The house of home and family."},
-    {"id": 5, "name": "Fifth House", "description": "The house of creativity and romance."},
-    {"id": 6, "name": "Sixth House", "description": "The house of health and service."},
-    {"id": 7, "name": "Seventh House", "description": "The house of partnerships and marriage."},
-    {"id": 8, "name": "Eighth House", "description": "The house of transformation and sexuality."},
-    {"id": 9, "name": "Ninth House", "description": "The house of philosophy and long-distance travel."},
-    {"id": 10, "name": "Tenth House", "description": "The house of career and reputation."},
-    {"id": 11, "name": "Eleventh House", "description": "The house of friendships and collective activities."},
-    {"id": 12, "name": "Twelfth House", "description": "The house of the subconscious and the unknown."}
-  ],
-  "Aspects": [
-    {"id": 1, "name": "Conjunction", "description": "Planets are in close proximity."},
-    {"id": 2, "name": "Sextile", "description": "Planets are 60 degrees apart."},
-    {"id": 3, "name": "Square", "description": "Planets are 90 degrees apart, indicating challenges and tension."},
-    {"id": 4, "name": "Trine", "description": "Planets are 120 degrees apart, indicating harmony and ease."},
-    {"id": 5, "name": "Opposition", "description": "Planets are 180 degrees apart, reflecting polarity and potential conflict."}
-  ],
-  "Zodiacs": [
-    {"id": 1, "name": "Aries", "description": "The Ram, a fire sign.", "qualityID": 1, "signID": 1},
-    {"id": 2, "name": "Taurus", "description": "The Bull, an earth sign.", "qualityID": 2, "signID": 2},
-    {"id": 3, "name": "Gemini", "description": "The Twins, an air sign.", "qualityID": 3, "signID": 3},
-    {"id": 4, "name": "Cancer", "description": "The Crab, a water sign.", "qualityID": 1, "signID": 4},
-    {"id": 5, "name": "Leo", "description": "The Lion, a fire sign.", "qualityID": 2, "signID": 1},
-    {"id": 6, "name": "Virgo", "description": "The Virgin, an earth sign.", "qualityID": 3, "signID": 2},
-    {"id": 7, "name": "Libra", "description": "The Scales, an air sign.", "qualityID": 1, "signID": 3},
-    {"id": 8, "name": "Scorpio", "description": "The Scorpion, a water sign.", "qualityID": 2, "signID": 4},
-    {"id": 9, "name": "Sagittarius", "description": "The Archer, a fire sign.", "qualityID": 3, "signID": 1},
-    {"id": 10, "name": "Capricorn", "description": "The Goat, an earth sign.", "qualityID": 1, "signID": 2},
-    {"id": 11, "name": "Aquarius", "description": "The Water Bearer, an air sign.", "qualityID": 2, "signID": 3},
-    {"id": 12, "name": "Pisces", "description": "The Fish, a water sign.", "qualityID": 3, "signID": 4}
-  ],
-  "Qualities": [
-    {"id": 1, "name": "Cardinal"},
-    {"id": 2, "name": "Fixed"},
-    {"id": 3, "name": "Mutable"}
-  ],
-  "Signs": [
-    {"id": 1, "name": "Fire"},
-    {"id": 2, "name": "Earth"},
-    {"id": 3, "name": "Air"},
-    {"id": 4, "name": "Water"}
-  ]
+    "Planets": [
+        {
+            "id": 1,
+            "name": "Mercury",
+            "zodiacID": 3,
+            "description": "Represents communication, intellect, and awareness.",
+            "img": "mercury"
+        },
+        {
+            "id": 2,
+            "name": "Venus",
+            "zodiacID": 2,
+            "description": "Symbolizes love, beauty, and money.",
+            "img": "venus"
+        },
+        {
+            "id": 3,
+            "name": "Earth",
+            "zodiacID": 4,
+            "description": "Represents grounding, stability, and physicality.",
+            "img": "earth"
+        },
+        {
+            "id": 4,
+            "name": "Mars",
+            "zodiacID": 1,
+            "description": "Associated with energy, assertiveness, and action.",
+            "img": "mars"
+        },
+        {
+            "id": 5,
+            "name": "Jupiter",
+            "zodiacID": 9,
+            "description": "Signifies luck, growth, and expansion.",
+            "img": "jupiter"
+        },
+        {
+            "id": 6,
+            "name": "Saturn",
+            "zodiacID": 10,
+            "description": "Represents responsibility, discipline, and limits.",
+            "img": "saturn"
+        },
+        {
+            "id": 7,
+            "name": "Uranus",
+            "zodiacID": 11,
+            "description": "Symbolizes innovation, change, and uniqueness.",
+            "img": "uranus"
+        },
+        {
+            "id": 8,
+            "name": "Neptune",
+            "zodiacID": 12,
+            "description": "Associated with dreams, intuition, and mysticism.",
+            "img": "neptune"
+        },
+        {
+            "id": 9,
+            "name": "Pluto",
+            "zodiacID": 8,
+            "description": "Represents transformation, power, and renewal.",
+            "img": "pluto"
+        },
+        {
+            "id": 10,
+            "name": "Chiron",
+            "zodiacID": 0,
+            "description": "The Wounded Healer",
+            "img": "chiron"
+        },
+        {
+            "id": 11,
+            "name": "Ascendant",
+            "zodiacID": 0,
+            "description": "Your social personality",
+            "img": "ascendant"
+        },
+        {
+            "id": 12,
+            "name": "Midheaven",
+            "zodiacID": 0,
+            "description": "Career and public image",
+            "img": "midheaven"
+        },
+        {
+            "id": 13,
+            "name": "North Node",
+            "zodiacID": 0,
+            "description": "Your life's purpose",
+            "img": "north"
+        },
+        {
+            "id": 14,
+            "name": "South Node",
+            "zodiacID": 0,
+            "description": "Past life and skills",
+            "img": "south"
+        }
+    ],
+    "Houses": [
+        {
+            "id": 1,
+            "name": "First House",
+            "description": "The house of self and appearance.",
+            "img": "1st"
+        },
+        {
+            "id": 2,
+            "name": "Second House",
+            "description": "The house of possessions and values.",
+            "img": "2nd"
+        },
+        {
+            "id": 3,
+            "name": "Third House",
+            "description": "The house of communication and siblings.",
+            "img": "3rd"
+        },
+        {
+            "id": 4,
+            "name": "Fourth House",
+            "description": "The house of home and family.",
+            "img": "4th"
+        },
+        {
+            "id": 5,
+            "name": "Fifth House",
+            "description": "The house of creativity and romance.",
+            "img": "5th"
+        },
+        {
+            "id": 6,
+            "name": "Sixth House",
+            "description": "The house of health and service.",
+            "img": "6th"
+        },
+        {
+            "id": 7,
+            "name": "Seventh House",
+            "description": "The house of partnerships and marriage.",
+            "img": "7th"
+        },
+        {
+            "id": 8,
+            "name": "Eighth House",
+            "description": "The house of transformation and sexuality.",
+            "img": "8th"
+        },
+        {
+            "id": 9,
+            "name": "Ninth House",
+            "description": "The house of philosophy and long-distance travel.",
+            "img": "9th"
+        },
+        {
+            "id": 10,
+            "name": "Tenth House",
+            "description": "The house of career and reputation.",
+            "img": "10th"
+        },
+        {
+            "id": 11,
+            "name": "Eleventh House",
+            "description": "The house of friendships and collective activities.",
+            "img": "11th"
+        },
+        {
+            "id": 12,
+            "name": "Twelfth House",
+            "description": "The house of the subconscious and the unknown.",
+            "img": "12th"
+        }
+    ],
+    "Aspects": [
+        {
+            "id": 1,
+            "name": "Conjunction",
+            "description": "Planets are in close proximity.",
+            "img": "conjunction"
+        },
+        {
+            "id": 2,
+            "name": "Sextile",
+            "description": "Planets are 60 degrees apart.",
+            "img": "sextile"
+        },
+        {
+            "id": 3,
+            "name": "Square",
+            "description": "Planets are 90 degrees apart, indicating challenges and tension.",
+            "img": "square"
+        },
+        {
+            "id": 4,
+            "name": "Trine",
+            "description": "Planets are 120 degrees apart, indicating harmony and ease.",
+            "img": "trine"
+        },
+        {
+            "id": 5,
+            "name": "Opposition",
+            "description": "Planets are 180 degrees apart, reflecting polarity and potential conflict.",
+            "img": "opposition"
+        }
+    ],
+    "Zodiacs": [
+        {
+            "id": 1,
+            "name": "Aries",
+            "description": "The Ram, a fire sign.",
+            "qualityID": 1,
+            "signID": 1,
+            "img": "aries"
+        },
+        {
+            "id": 2,
+            "name": "Taurus",
+            "description": "The Bull, an earth sign.",
+            "qualityID": 2,
+            "signID": 2,
+            "img": "taurus"
+        },
+        {
+            "id": 3,
+            "name": "Gemini",
+            "description": "The Twins, an air sign.",
+            "qualityID": 3,
+            "signID": 3,
+            "img": "gemini"
+        },
+        {
+            "id": 4,
+            "name": "Cancer",
+            "description": "The Crab, a water sign.",
+            "qualityID": 1,
+            "signID": 4,
+            "img": "cancer"
+        },
+        {
+            "id": 5,
+            "name": "Leo",
+            "description": "The Lion, a fire sign.",
+            "qualityID": 2,
+            "signID": 1,
+            "img": "leo"
+        },
+        {
+            "id": 6,
+            "name": "Virgo",
+            "description": "The Virgin, an earth sign.",
+            "qualityID": 3,
+            "signID": 2,
+            "img": "virgo"
+        },
+        {
+            "id": 7,
+            "name": "Libra",
+            "description": "The Scales, an air sign.",
+            "qualityID": 1,
+            "signID": 3,
+            "img": "libra"
+        },
+        {
+            "id": 8,
+            "name": "Scorpio",
+            "description": "The Scorpion, a water sign.",
+            "qualityID": 2,
+            "signID": 4,
+            "img": "scorpion"
+        },
+        {
+            "id": 9,
+            "name": "Sagittarius",
+            "description": "The Archer, a fire sign.",
+            "qualityID": 3,
+            "signID": 1,
+            "img": "sagittarius"
+        },
+        {
+            "id": 10,
+            "name": "Capricorn",
+            "description": "The Goat, an earth sign.",
+            "qualityID": 1,
+            "signID": 2,
+            "img": "capricorn"
+        },
+        {
+            "id": 11,
+            "name": "Aquarius",
+            "description": "The Water Bearer, an air sign.",
+            "qualityID": 2,
+            "signID": 3,
+            "img": "aquarius"
+        },
+        {
+            "id": 12,
+            "name": "Pisces",
+            "description": "The Fish, a water sign.",
+            "qualityID": 3,
+            "signID": 4,
+            "img": "pisces"
+        }
+    ],
+    "Qualities": [
+        {
+            "id": 1,
+            "name": "Cardinal",
+            "img": "cardinal"
+        },
+        {
+            "id": 2,
+            "name": "Fixed",
+            "img": "fixed"
+        },
+        {
+            "id": 3,
+            "name": "Mutable",
+            "img": "mutable"
+        }
+    ],
+    "Signs": [
+        {
+            "id": 1,
+            "name": "Fire",
+            "img": "fire"
+        },
+        {
+            "id": 2,
+            "name": "Earth",
+            "img": "earth"
+        },
+        {
+            "id": 3,
+            "name": "Air",
+            "img": "air"
+        },
+        {
+            "id": 4,
+            "name": "Water",
+            "img": "water"
+        }
+    ]
 }
-

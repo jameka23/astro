@@ -29,13 +29,13 @@ class PlanetTableViewCell: UITableViewCell {
         stack.distribution = .fill
         stack.axis = .horizontal
         stack.alignment = .fill
-        stack.spacing = 10
+        stack.spacing = 2
         return stack
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-
+        
         stackView.addArrangedSubview(planetLabel)
         stackView.addArrangedSubview(planetImage)
         contentView.addSubview(stackView)
@@ -49,13 +49,16 @@ class PlanetTableViewCell: UITableViewCell {
 
     func setupConstraints(){
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
-            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
-            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+            stackView.widthAnchor.constraint(equalToConstant: 120),
+            stackView.heightAnchor.constraint(equalToConstant: 50),
+            
             // Example constraint for image view
-            planetImage.widthAnchor.constraint(equalToConstant: 60) // Adjust as needed
+            planetImage.widthAnchor.constraint(equalToConstant: 40), // Adjust as needed
+            planetImage.heightAnchor.constraint(equalToConstant: 40)
         ])
         
     }
