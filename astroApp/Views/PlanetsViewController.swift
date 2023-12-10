@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftUI
 
 class PlanetsViewController: UIViewController {
 
@@ -34,24 +33,39 @@ class PlanetsViewController: UIViewController {
         tableView.dataSource = self
         
         // add the custom tableviewcell here..register it
+        tableView.register(PlanetTableViewCell.self, forCellReuseIdentifier: PlanetTableViewCell.reuseIdentifier)
         
         self.view.addSubview(tableView)
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            tableView.rightAnchor.constraint(equalTo: view.leftAnchor)
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
 }
 
 extension PlanetsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        if let viewModel {
+            return  viewModel.planetsData.count
+        } else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PlanetTableViewCell.reuseIdentifier, for: indexPath) as? PlanetTableViewCell else {
+            fatalError("Dequeued cell not an instance of CustomTableViewCell.")
+        }
+        print(indexPath.row)
+        
+        if let viewModel = viewModel {
+                let planet = viewModel.planetsData[indexPath.row]
+                cell.planetLabel.text = planet.name
+                // Set other properties of the cell
+            }
+        return cell
     }
     
     

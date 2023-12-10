@@ -8,6 +8,7 @@
 import UIKit
 
 class PlanetTableViewCell: UITableViewCell {
+    static let reuseIdentifier = "PlanetCell"
 
     var planetLabel: UILabel = {
        let lbl = UILabel()
@@ -18,6 +19,7 @@ class PlanetTableViewCell: UITableViewCell {
     var planetImage: UIImageView = {
         let imgView = UIImageView()
         imgView.translatesAutoresizingMaskIntoConstraints = false
+        imgView.contentMode = .scaleAspectFit
         return imgView
     }()
     
@@ -27,6 +29,7 @@ class PlanetTableViewCell: UITableViewCell {
         stack.distribution = .fill
         stack.axis = .horizontal
         stack.alignment = .fill
+        stack.spacing = 10
         return stack
     }()
     
@@ -35,7 +38,7 @@ class PlanetTableViewCell: UITableViewCell {
 
         stackView.addArrangedSubview(planetLabel)
         stackView.addArrangedSubview(planetImage)
-        self.addSubview(stackView)
+        contentView.addSubview(stackView)
         setupConstraints()
     }
 
@@ -46,10 +49,13 @@ class PlanetTableViewCell: UITableViewCell {
 
     func setupConstraints(){
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: topAnchor, constant: 20),
-            stackView.leftAnchor.constraint(equalTo: leftAnchor, constant: 5),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20),
-            stackView.rightAnchor.constraint(equalTo: rightAnchor, constant: -5)
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
+            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+
+            // Example constraint for image view
+            planetImage.widthAnchor.constraint(equalToConstant: 60) // Adjust as needed
         ])
         
     }

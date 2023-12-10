@@ -18,14 +18,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let vc = PlanetsViewController()
         let nav = UINavigationController(rootViewController: vc)
-        let planetsIcon = UITabBarItem(title: "Planets", image: UIImage(named: "planetstab"), tag: 1)
+//        let planetsIcon = UITabBarItem(title: "Planets", image: UIImage(named: "planetstab"), tag: 1)
+//        vc.tabBarItem = planetsIcon
         
         let zodiacVC = ZodiacsViewController()
         let zodiacNav = UINavigationController(rootViewController: zodiacVC)
-        let zodiacsIcon = UITabBarItem(title: "Zodiacs", image: UIImage(named: "zodiacstab"), tag: 2)
+//        let zodiacsIcon = UITabBarItem(title: "Zodiacs", image: UIImage(named: "zodiacstab"), tag: 2)
+//        zodiacVC.tabBarItem = zodiacsIcon
         
         let tab = UITabBarController()
-        tab.viewControllers = [nav, zodiacVC]
+        tab.viewControllers = [nav, zodiacNav]
         window.rootViewController = tab
         self.window = window
         self.window?.makeKeyAndVisible()

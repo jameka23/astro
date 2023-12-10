@@ -9,10 +9,10 @@ import Foundation
 
 // define the json coming in and conforms to Codable Protocol
 struct AstrologyData: Codable {
-    let planets: [Planet]
-    let houses: [House]
-    let aspects: [Aspect]
-    let zodiacs: [Zodiac]
-    let qualities: [Quality]
-    let signs: [Sign]
+    let Planets: [Planet]
+    let Houses: [House]
+    let Aspects: [Aspect]
+    let Zodiacs: [Zodiac]
+    let Qualities: [Quality]
+    let Signs: [Sign]
 }
