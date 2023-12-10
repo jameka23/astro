@@ -6,7 +6,8 @@
 //
 
 import Foundation
-struct Zodiacs {
+
+struct Zodiac: Codable {
     let id: Int?
     let name: String?
     let signID: Int?

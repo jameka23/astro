@@ -15,9 +15,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let vc = LandingViewController()
+        
+        let vc = PlanetsViewController()
         let nav = UINavigationController(rootViewController: vc)
-        window.rootViewController = nav
+        
+        let zodiacVC = ZodiacsViewController()
+        let zodiacNav = UINavigationController(rootViewController: zodiacVC)
+        
+        let tab = UITabBarController()
+        tab.viewControllers = [nav, zodiacVC]
+        window.rootViewController = tab
         self.window = window
         self.window?.makeKeyAndVisible()
     }

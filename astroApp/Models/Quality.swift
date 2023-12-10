@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Quality {
+struct Quality: Codable {
     let id: Int?
     let name: String?
 }

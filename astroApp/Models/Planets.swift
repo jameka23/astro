@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Planet {
+struct Planet: Codable {
     let id: Int?
     let name: String?
     let zodiacID: Int?

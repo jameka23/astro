@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct House {
+struct House: Codable {
     let id: Int?
     let number: String?
     let description: String?

@@ -32,18 +32,18 @@
     {"id": 5, "name": "Opposition", "description": "Planets are 180 degrees apart, reflecting polarity and potential conflict."}
   ],
   "Zodiacs": [
-    {"id": 1, "name": "Aries", "description": "The Ram, a fire sign.", "qualityID": "", "signID": ""},
-    {"id": 2, "name": "Taurus", "description": "The Bull, an earth sign.", "qualityID": "", "signID": ""},
-    {"id": 3, "name": "Gemini", "description": "The Twins, an air sign.", "qualityID": "", "signID": ""},
-    {"id": 4, "name": "Cancer", "description": "The Crab, a water sign.", "qualityID": "", "signID": ""},
-    {"id": 5, "name": "Leo", "description": "The Lion, a fire sign.", "qualityID": "", "signID": ""},
-    {"id": 6, "name": "Virgo", "description": "The Virgin, an earth sign.", "qualityID": "", "signID": ""},
-    {"id": 7, "name": "Libra", "description": "The Scales, an air sign.", "qualityID": "", "signID": ""},
-    {"id": 8, "name": "Scorpio", "description": "The Scorpion, a water sign.", "qualityID": "", "signID": ""},
-    {"id": 9, "name": "Sagittarius", "description": "The Archer, a fire sign.", "qualityID": "", "signID": ""},
-    {"id": 10, "name": "Capricorn", "description": "The Goat, an earth sign.", "qualityID": "", "signID": ""},
-    {"id": 11, "name": "Aquarius", "description": "The Water Bearer, an air sign.", "qualityID": "", "signID": ""},
-    {"id": 12, "name": "Pisces", "description": "The Fish, a water sign.", "qualityID": "", "signID": ""}
+    {"id": 1, "name": "Aries", "description": "The Ram, a fire sign.", "qualityID": 1, "signID": 1},
+    {"id": 2, "name": "Taurus", "description": "The Bull, an earth sign.", "qualityID": 2, "signID": 2},
+    {"id": 3, "name": "Gemini", "description": "The Twins, an air sign.", "qualityID": 3, "signID": 3},
+    {"id": 4, "name": "Cancer", "description": "The Crab, a water sign.", "qualityID": 1, "signID": 4},
+    {"id": 5, "name": "Leo", "description": "The Lion, a fire sign.", "qualityID": 2, "signID": 1},
+    {"id": 6, "name": "Virgo", "description": "The Virgin, an earth sign.", "qualityID": 3, "signID": 2},
+    {"id": 7, "name": "Libra", "description": "The Scales, an air sign.", "qualityID": 1, "signID": 3},
+    {"id": 8, "name": "Scorpio", "description": "The Scorpion, a water sign.", "qualityID": 2, "signID": 4},
+    {"id": 9, "name": "Sagittarius", "description": "The Archer, a fire sign.", "qualityID": 3, "signID": 1},
+    {"id": 10, "name": "Capricorn", "description": "The Goat, an earth sign.", "qualityID": 1, "signID": 2},
+    {"id": 11, "name": "Aquarius", "description": "The Water Bearer, an air sign.", "qualityID": 2, "signID": 3},
+    {"id": 12, "name": "Pisces", "description": "The Fish, a water sign.", "qualityID": 3, "signID": 4}
   ],
   "Qualities": [
     {"id": 1, "name": "Cardinal"},

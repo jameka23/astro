@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-struct Aspect {
+struct Aspect: Codable {
     let id: Int?
     let name: String?
     let description: String?
