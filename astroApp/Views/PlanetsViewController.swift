@@ -29,7 +29,7 @@ class PlanetsViewController: UIViewController {
     private func setup() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.title = "Planets"
-        
+        tableView.delegate = self
         tableView.dataSource = self
         
         // add the custom tableviewcell here..register it
@@ -56,7 +56,8 @@ extension PlanetsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PlanetTableViewCell.reuseIdentifier, for: indexPath) as? PlanetTableViewCell else {
-            fatalError("Dequeued cell not an instance of CustomTableViewCell.")
+//            fatalError("Dequeued cell not an instance of CustomTableViewCell.")
+            return UITableViewCell()
         }
         
         if let viewModel = viewModel {
@@ -68,8 +69,13 @@ extension PlanetsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
         if let selected = viewModel?.planetsData[indexPath.row] {
             // insert nav logic here for PlanetDetailsView
+            let planetDetailsVC = PlanetDetailViewController()
+            planetDetailsVC.planet = selected
+
+            navigationController?.pushViewController(planetDetailsVC, animated: true)
         }
     }
     

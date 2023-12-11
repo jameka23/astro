@@ -53,11 +53,8 @@ class PlanetTableViewCell: UITableViewCell {
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-            stackView.widthAnchor.constraint(equalToConstant: 120),
-            stackView.heightAnchor.constraint(equalToConstant: 50),
-            
-            // Example constraint for image view
-            planetImage.widthAnchor.constraint(equalToConstant: 40), // Adjust as needed
+
+            planetImage.widthAnchor.constraint(equalToConstant: 40),
             planetImage.heightAnchor.constraint(equalToConstant: 40)
         ])
         
