@@ -33,9 +33,10 @@ class PlanetDetailViewController: UIViewController{
         return lbl
     }()
     
-    var descriptionLabel: UITextView = {
-        let tv = UITextView()
+    var descriptionLabel: UILabel = {
+        let tv = UILabel()
         tv.translatesAutoresizingMaskIntoConstraints = false
+        tv.numberOfLines = 5
         return tv
     }()
     
@@ -43,8 +44,8 @@ class PlanetDetailViewController: UIViewController{
         let sv = UIStackView()
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.axis = .vertical
-        sv.spacing = 3
-        sv.distribution = .fill
+        sv.spacing = 1
+        sv.distribution = .fillProportionally
         sv.alignment = .center
         return sv
     }()
@@ -58,6 +59,7 @@ class PlanetDetailViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
         setupStackView()
         configure()
     }
@@ -77,12 +79,12 @@ class PlanetDetailViewController: UIViewController{
         self.view.addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10),
+            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
-            planetImg.widthAnchor.constraint(equalToConstant: 75),
-            planetImg.heightAnchor.constraint(equalToConstant: 75)
+            planetImg.widthAnchor.constraint(equalToConstant: 50),
+            planetImg.heightAnchor.constraint(equalToConstant: 50)
             
         ])
     }
