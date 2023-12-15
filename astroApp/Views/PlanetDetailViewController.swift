@@ -36,7 +36,7 @@ class PlanetDetailViewController: UIViewController{
     var descriptionLabel: UILabel = {
         let tv = UILabel()
         tv.translatesAutoresizingMaskIntoConstraints = false
-        tv.numberOfLines = 5
+        tv.numberOfLines = 3
         return tv
     }()
     
@@ -74,15 +74,19 @@ class PlanetDetailViewController: UIViewController{
         stackView.addArrangedSubview(planetImg)
         stackView.addArrangedSubview(nameLabel)
 //        stackView.addArrangedSubview(rulingLabel)
-        stackView.addArrangedSubview(descriptionLabel)
+//        stackView.addArrangedSubview(descriptionLabel)
         
         self.view.addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
+            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: -60),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            descriptionLabel.topAnchor.constraint(equalTo: stackView.bottomAnchor),
+            descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            descriptionLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             planetImg.widthAnchor.constraint(equalToConstant: 50),
             planetImg.heightAnchor.constraint(equalToConstant: 50)
             
