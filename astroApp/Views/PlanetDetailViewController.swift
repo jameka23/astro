@@ -37,6 +37,7 @@ class PlanetDetailViewController: UIViewController{
         let tv = UILabel()
         tv.translatesAutoresizingMaskIntoConstraints = false
         tv.numberOfLines = 3
+        tv.lineBreakMode = .byWordWrapping
         return tv
     }()
     
@@ -45,7 +46,7 @@ class PlanetDetailViewController: UIViewController{
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.axis = .vertical
         sv.spacing = 1
-        sv.distribution = .fillProportionally
+        sv.distribution = .fill
         sv.alignment = .center
         return sv
     }()
@@ -73,23 +74,25 @@ class PlanetDetailViewController: UIViewController{
     func setupStackView(){
         stackView.addArrangedSubview(planetImg)
         stackView.addArrangedSubview(nameLabel)
-//        stackView.addArrangedSubview(rulingLabel)
-//        stackView.addArrangedSubview(descriptionLabel)
-        
-        self.view.addSubview(stackView)
+        view.addSubview(containerView)
+        containerView.addSubview(stackView)
+        containerView.addSubview(descriptionLabel)
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: -60),
-            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-            stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
-            descriptionLabel.topAnchor.constraint(equalTo: stackView.bottomAnchor),
-            descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            descriptionLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            planetImg.widthAnchor.constraint(equalToConstant: 50),
-            planetImg.heightAnchor.constraint(equalToConstant: 50)
+            planetImg.widthAnchor.constraint(equalToConstant: 200),
+            planetImg.heightAnchor.constraint(equalToConstant: 200),
+
+            containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
+            containerView.widthAnchor.constraint(equalToConstant: 400),
+            containerView.heightAnchor.constraint(equalToConstant: 600),
             
+            stackView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+            stackView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
+            
+            descriptionLabel.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 10),
+            descriptionLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 40),
+            descriptionLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -15)
         ])
     }
 }
