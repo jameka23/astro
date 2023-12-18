@@ -38,6 +38,8 @@ class PlanetDetailViewController: UIViewController{
         tv.translatesAutoresizingMaskIntoConstraints = false
         tv.numberOfLines = 3
         tv.lineBreakMode = .byWordWrapping
+        tv.textAlignment = .center
+        
         return tv
     }()
     
@@ -45,7 +47,7 @@ class PlanetDetailViewController: UIViewController{
         let sv = UIStackView()
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.axis = .vertical
-        sv.spacing = 1
+        sv.spacing = 0
         sv.distribution = .fill
         sv.alignment = .center
         return sv
@@ -82,7 +84,7 @@ class PlanetDetailViewController: UIViewController{
             planetImg.widthAnchor.constraint(equalToConstant: 200),
             planetImg.heightAnchor.constraint(equalToConstant: 200),
 
-            containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
+            containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
             containerView.widthAnchor.constraint(equalToConstant: 400),
             containerView.heightAnchor.constraint(equalToConstant: 600),
             
@@ -92,7 +94,9 @@ class PlanetDetailViewController: UIViewController{
             descriptionLabel.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 10),
             descriptionLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 40),
             descriptionLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
-            descriptionLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -15)
+            descriptionLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -40),
+            descriptionLabel.widthAnchor.constraint(equalToConstant: 400),
+            descriptionLabel.heightAnchor.constraint(equalToConstant: 150)
         ])
     }
 }
