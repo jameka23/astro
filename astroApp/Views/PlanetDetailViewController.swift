@@ -24,6 +24,7 @@ class PlanetDetailViewController: UIViewController{
     var nameLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
+        lbl.font = UIFont(name: "NexaDemo-Bold", size: 25)
         return lbl
     }()
     
@@ -39,7 +40,7 @@ class PlanetDetailViewController: UIViewController{
         tv.numberOfLines = 3
         tv.lineBreakMode = .byWordWrapping
         tv.textAlignment = .center
-        
+        tv.font = UIFont(name: "Nexa Demo", size: 16)
         return tv
     }()
     
@@ -72,6 +73,7 @@ class PlanetDetailViewController: UIViewController{
         descriptionLabel.text = planet?.description
         planetImg.image = UIImage(named: (planet?.img)!)
     }
+
     
     func setupStackView(){
         stackView.addArrangedSubview(planetImg)
