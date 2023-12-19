@@ -25,6 +25,7 @@
 		696E213B2B2FF9A3001C4504 /* NexaDemo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696E21372B2FF9A3001C4504 /* NexaDemo-Bold.ttf */; };
 		696E213D2B2FF9B1001C4504 /* FF EULA License ver2.2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 696E213C2B2FF9B1001C4504 /* FF EULA License ver2.2.pdf */; };
 		696E213F2B2FFAB3001C4504 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E213E2B2FFAB3001C4504 /* Fonts.swift */; };
+		696E21412B311EE4001C4504 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E21402B311EE4001C4504 /* CustomTabBarController.swift */; };
 		696FFAEE2AB91A6800C233E1 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FFAED2AB91A6800C233E1 /* Planets.swift */; };
 		69F4BA992B25163A00EA9C05 /* astrologyData.json in Resources */ = {isa = PBXBuildFile; fileRef = 69F4BA982B25163A00EA9C05 /* astrologyData.json */; };
 		69F4BA9B2B254D5400EA9C05 /* AstrologyDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F4BA9A2B254D5400EA9C05 /* AstrologyDataService.swift */; };
@@ -57,6 +58,7 @@
 		696E21372B2FF9A3001C4504 /* NexaDemo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NexaDemo-Bold.ttf"; sourceTree = "<group>"; };
 		696E213C2B2FF9B1001C4504 /* FF EULA License ver2.2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "FF EULA License ver2.2.pdf"; sourceTree = "<group>"; };
 		696E213E2B2FFAB3001C4504 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		696E21402B311EE4001C4504 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		696FFAED2AB91A6800C233E1 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
 		69F4BA982B25163A00EA9C05 /* astrologyData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = astrologyData.json; sourceTree = "<group>"; };
 		69F4BA9A2B254D5400EA9C05 /* AstrologyDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyDataService.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				69F4BA9F2B25744700EA9C05 /* AspectsViewController.swift */,
 				69F4BAA12B25746200EA9C05 /* HousesViewController.swift */,
 				69F4BAA72B26552000EA9C05 /* PlanetDetailViewController.swift */,
+				696E21402B311EE4001C4504 /* CustomTabBarController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				69F4BAA22B25746200EA9C05 /* HousesViewController.swift in Sources */,
 				69F4BA9B2B254D5400EA9C05 /* AstrologyDataService.swift in Sources */,
+				696E21412B311EE4001C4504 /* CustomTabBarController.swift in Sources */,
 				694BAAC92B04868A00D49DF1 /* Aspects.swift in Sources */,
 				694BAACC2B09A59400D49DF1 /* Quality.swift in Sources */,
 				69F4BAA42B25777400EA9C05 /* PlanetsViewModel.swift in Sources */,

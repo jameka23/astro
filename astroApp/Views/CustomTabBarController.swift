@@ -1,0 +1,46 @@
+//
+//  CustomTabBarController.swift
+//  astroApp
+//
+//  Created by Jameka Echols on 12/18/23.
+//
+
+import Foundation
+import UIKit
+
+class CustomTabBarController: UITabBarController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configureUI()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        changeHeightOffTabbar()
+    }
+    
+    func configureUI(){
+        tabBar.layer.masksToBounds = true
+        tabBar.isTranslucent = true
+        tabBar.layer.cornerRadius = 20
+        tabBar.layer.backgroundColor = UIColor.blue.cgColor
+        tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+    }
+    
+    func changeHeightOffTabbar(){
+        if UIDevice().userInterfaceIdiom == .phone {
+            var tabFrame = tabBar.frame
+            let horizontalMargin: CGFloat = 15
+            tabFrame.size.height = 50
+            
+            tabFrame.size.width = view.frame.size.width - 2 * horizontalMargin
+            tabFrame.origin.x = horizontalMargin
+            tabFrame.origin.y = view.frame.size.height - 80
+            tabBar.frame = tabFrame
+
+        }
+    }
+}
+
+
