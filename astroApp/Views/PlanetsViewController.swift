@@ -20,7 +20,7 @@ class PlanetsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .cyan
+//        self.view.backgroundColor = .cyan
         
         viewModel = PlanetsViewModel()
         setup()

@@ -21,7 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let planetsIcon = UITabBarItem(title: "Planets", image: UIImage(named: "planets"), tag: 1)
         let tabItem = UITabBarItem()
         tabItem.image = UIImage(named: "planets")
-        vc.tabBarItem = tabItem
+        
+        
+        vc.tabBarItem = planetsIcon
         
         let zodiacVC = ZodiacsViewController()
         let zodiacNav = UINavigationController(rootViewController: zodiacVC)
