@@ -18,12 +18,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let vc = PlanetsViewController()
         let nav = UINavigationController(rootViewController: vc)
-        let planetsIcon = UITabBarItem(title: "Planets", image: UIImage(named: "aspectstab"), tag: 1)
+        let planetsIcon = UITabBarItem(title: nil, image: UIImage(named: "planetstab"), tag: 1)
         
         let tabItem = UITabBarItem()
         tabItem.image = UIImage(named: "planets")
         
-        
+        vc.tabBarItem.imageInsets = UIEdgeInsets(top: -5, left: -10, bottom: -5, right: -5)
         vc.tabBarItem = planetsIcon
         
         let zodiacVC = ZodiacsViewController()
