@@ -27,8 +27,8 @@ class CustomTabBarController: UITabBarController {
         tabBar.layer.backgroundColor = UIColor.white.cgColor
         tabBar.layer.opacity = 0.7
         tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-        tabBar.barTintColor = .green
-        tabBar.backgroundColor = .green
+        tabBar.barTintColor = .systemPink
+        tabBar.backgroundColor = .white   
     }
     
     func changeHeightOffTabbar(){
