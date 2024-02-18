@@ -24,8 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
 //        let yourTabBarItem = UITabBarItem(title: "Your Title", image: UIImage(named: "yourIcon")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "yourSelectedIcon"))
 
-    
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.purple], for: .normal)
+        let customFont = UIFont(name: "Nexa Demo", size: 10) ?? UIFont.systemFont(ofSize: 10)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: customFont, NSAttributedString.Key.foregroundColor: UIColor.purple], for: .normal)
         
         vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
         vc.tabBarItem = planetsIcon
