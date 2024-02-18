@@ -18,12 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let vc = PlanetsViewController()
         let nav = UINavigationController(rootViewController: vc)
-        let planetsIcon = UITabBarItem(title: nil, image: UIImage(named: "planet")?.withRenderingMode(.alwaysOriginal), tag: 1)
+        let planetsIcon = UITabBarItem(title: "Planets", image: UIImage(named: "planet")?.withRenderingMode(.alwaysOriginal), tag: 1)
+        
+        //****** USE THIS FOR SELECTION AND NON SELECTED ICONS
+        
 //        let yourTabBarItem = UITabBarItem(title: "Your Title", image: UIImage(named: "yourIcon")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "yourSelectedIcon"))
 
-        
-        let tabItem = UITabBarItem()
-        tabItem.image = UIImage(named: "planets")
+    
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.purple], for: .normal)
         
         vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
         vc.tabBarItem = planetsIcon
