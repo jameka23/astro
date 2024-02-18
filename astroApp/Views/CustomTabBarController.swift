@@ -25,10 +25,11 @@ class CustomTabBarController: UITabBarController {
         tabBar.isTranslucent = true
         tabBar.layer.cornerRadius = 20
         tabBar.layer.backgroundColor = UIColor.white.cgColor
-        tabBar.layer.opacity = 0.7
         tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-//        tabBar.barTintColor = .systemPink
-        tabBar.backgroundColor = .white   
+        tabBar.backgroundColor = .white
+        
+        let customFont = UIFont(name: "Nexa Demo", size: 10) ?? UIFont.systemFont(ofSize: 10)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: customFont, NSAttributedString.Key.foregroundColor: UIColor.purple], for: .normal)
     }
     
     func changeHeightOffTabbar(){
