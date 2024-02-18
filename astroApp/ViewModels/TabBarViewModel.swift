@@ -17,10 +17,10 @@ struct TabBarItemViewModel {
 
 class TabBarViewModel {
     let tabs : [TabBarItemViewModel] = [
-        TabBarItemViewModel(viewController: PlanetsViewController(), title: "Planets", icon: UIImage(named: "planet"), selectedIcon: nil),
-        TabBarItemViewModel(viewController: ZodiacsViewController(), title: "Zodiacs", icon: UIImage(named: "zodiac"), selectedIcon: nil),
-        TabBarItemViewModel(viewController: HousesViewController(), title: "Houses", icon: UIImage(named: "house"), selectedIcon: nil),
-        TabBarItemViewModel(viewController: <#T##UIViewController?#>, title: <#T##String?#>, icon: <#T##UIImage?#>, selectedIcon: <#T##UIImage?#>)
+        TabBarItemViewModel(viewController: PlanetsViewController(), title: "Planets", icon: UIImage(named: "planet")?.withRenderingMode(.alwaysOriginal), selectedIcon: nil),
+        TabBarItemViewModel(viewController: ZodiacsViewController(), title: "Zodiacs", icon: UIImage(named: "zodiac")?.withRenderingMode(.alwaysOriginal), selectedIcon: nil),
+        TabBarItemViewModel(viewController: HousesViewController(), title: "Houses", icon: UIImage(named: "house")?.withRenderingMode(.alwaysOriginal), selectedIcon: nil),
+        TabBarItemViewModel(viewController: AspectsViewController(), title: "Aspects", icon: UIImage(named: "aspect")?.withRenderingMode(.alwaysOriginal), selectedIcon: nil)
     ]
     
 }

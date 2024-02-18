@@ -16,27 +16,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         
-        let vc = PlanetsViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        let planetsIcon = UITabBarItem(title: "Planets", image: UIImage(named: "planet")?.withRenderingMode(.alwaysOriginal), tag: 1)
-        
-        //****** USE THIS FOR SELECTION AND NON SELECTED ICONS
-        
-//        let yourTabBarItem = UITabBarItem(title: "Your Title", image: UIImage(named: "yourIcon")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "yourSelectedIcon"))
-
         let customFont = UIFont(name: "Nexa Demo", size: 10) ?? UIFont.systemFont(ofSize: 10)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: customFont, NSAttributedString.Key.foregroundColor: UIColor.purple], for: .normal)
-        
-        vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
-        vc.tabBarItem = planetsIcon
-        
-        let zodiacVC = ZodiacsViewController()
-        let zodiacNav = UINavigationController(rootViewController: zodiacVC)
 
+        let tabBarViewModel = TabBarViewModel()
+        let tabBarController = CustomTabBarController()
+
+        tabBarController.viewControllers = tabBarViewModel.tabs.map { tab in
+            let navigationController = UINavigationController(rootViewController: tab.viewController!)
+            navigationController.tabBarItem = UITabBarItem(title: tab.title, image: tab.icon, selectedImage: tab.selectedIcon)
+            return navigationController
+        }
         
-        let tab = CustomTabBarController()
-        tab.viewControllers = [nav, zodiacNav]
-        window.rootViewController = tab
+        window.rootViewController = tabBarController
         self.window = window
         self.window?.makeKeyAndVisible()
     }

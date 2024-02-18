@@ -20,11 +20,19 @@ class PlanetsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = .cyan
         
         viewModel = PlanetsViewModel()
         setup()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
+
     
     private func setup() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
