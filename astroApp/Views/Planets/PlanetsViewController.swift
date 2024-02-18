@@ -39,8 +39,7 @@ class PlanetsViewController: UIViewController {
         self.navigationItem.title = "Planets"
         tableView.delegate = self
         tableView.dataSource = self
-        
-        // add the custom tableviewcell here..register it
+
         tableView.register(PlanetTableViewCell.self, forCellReuseIdentifier: PlanetTableViewCell.reuseIdentifier)
         
         self.view.addSubview(tableView)

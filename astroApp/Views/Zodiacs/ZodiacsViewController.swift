@@ -9,10 +9,16 @@ import UIKit
 
 class ZodiacsViewController: UIViewController {
 
+    private var tableView: UITableView = {
+        var tv = UITableView(frame: .zero, style: .plain)
+        tv.translatesAutoresizingMaskIntoConstraints = false
+        return tv
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      
     }
 
 
