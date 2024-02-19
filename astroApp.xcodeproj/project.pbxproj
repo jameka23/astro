@@ -34,6 +34,7 @@
 		69BFB6312B82CE4E00AEFF2B /* QualityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFB6302B82CE4E00AEFF2B /* QualityViewModel.swift */; };
 		69BFB6332B82CE5C00AEFF2B /* SignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFB6322B82CE5C00AEFF2B /* SignViewModel.swift */; };
 		69BFB6352B82D07400AEFF2B /* ZodiacTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFB6342B82D07400AEFF2B /* ZodiacTableViewCell.swift */; };
+		69BFB6372B82F1EF00AEFF2B /* ZodiacDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFB6362B82F1EF00AEFF2B /* ZodiacDetailViewController.swift */; };
 		69F4BA992B25163A00EA9C05 /* astrologyData.json in Resources */ = {isa = PBXBuildFile; fileRef = 69F4BA982B25163A00EA9C05 /* astrologyData.json */; };
 		69F4BA9B2B254D5400EA9C05 /* AstrologyDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F4BA9A2B254D5400EA9C05 /* AstrologyDataService.swift */; };
 		69F4BA9D2B25504700EA9C05 /* AstrologyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F4BA9C2B25504700EA9C05 /* AstrologyData.swift */; };
@@ -74,6 +75,7 @@
 		69BFB6302B82CE4E00AEFF2B /* QualityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityViewModel.swift; sourceTree = "<group>"; };
 		69BFB6322B82CE5C00AEFF2B /* SignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewModel.swift; sourceTree = "<group>"; };
 		69BFB6342B82D07400AEFF2B /* ZodiacTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacTableViewCell.swift; sourceTree = "<group>"; };
+		69BFB6362B82F1EF00AEFF2B /* ZodiacDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacDetailViewController.swift; sourceTree = "<group>"; };
 		69F4BA982B25163A00EA9C05 /* astrologyData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = astrologyData.json; sourceTree = "<group>"; };
 		69F4BA9A2B254D5400EA9C05 /* AstrologyDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyDataService.swift; sourceTree = "<group>"; };
 		69F4BA9C2B25504700EA9C05 /* AstrologyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyData.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				6938E4022AA5512D00E37202 /* ZodiacsViewController.swift */,
 				69BFB6342B82D07400AEFF2B /* ZodiacTableViewCell.swift */,
+				69BFB6362B82F1EF00AEFF2B /* ZodiacDetailViewController.swift */,
 			);
 			path = Zodiacs;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				6938E3EF2AA5141500E37202 /* AppDelegate.swift in Sources */,
 				69BFB6332B82CE5C00AEFF2B /* SignViewModel.swift in Sources */,
 				69F4BAA62B2578DB00EA9C05 /* PlanetTableViewCell.swift in Sources */,
+				69BFB6372B82F1EF00AEFF2B /* ZodiacDetailViewController.swift in Sources */,
 				694BAAC72B047A1B00D49DF1 /* Houses.swift in Sources */,
 				69BFB6242B8197AA00AEFF2B /* TabBarViewModel.swift in Sources */,
 				6938E3F12AA5141500E37202 /* SceneDelegate.swift in Sources */,

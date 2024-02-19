@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DAEDBB45-CFCD-45F4-815A-1B3CA4481BA4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "astroApp/Views/Planets/PlanetsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DAEDBB45-CFCD-45F4-815A-1B3CA4481BA4 - 499477fb4a380d17"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "astroApp.PlanetsViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "astroApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "194">
-               </Location>
-               <Location
-                  uuid = "DAEDBB45-CFCD-45F4-815A-1B3CA4481BA4 - 499477fb4a380d17"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "astroApp.PlanetsViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "astroApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "172">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A533F8C1-0767-45C8-990A-4C6DB5348E09"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

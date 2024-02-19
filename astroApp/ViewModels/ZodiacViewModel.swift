@@ -16,6 +16,17 @@ class ZodiacViewModel {
         } else {
             print("Error: Counld not load zodiac data.")
         }
-        
+    }
+    
+    func qualityForZodiac(zodiacId: Int?) -> Quality? {
+        return AstrologyDataService.shared.loadData()?.Qualities.first(where: {
+            $0.id == zodiacId
+        })
+    }
+    
+    func signForZodiac(zodiacId: Int?) -> Sign? {
+        return AstrologyDataService.shared.loadData()?.Signs.first(where: {
+            $0.id == zodiacId
+        })
     }
 }
