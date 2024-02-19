@@ -27,7 +27,7 @@ class CustomTabBarController: UITabBarController {
         tabBar.layer.backgroundColor = UIColor.white.cgColor
         tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         tabBar.backgroundColor = .white
-        
+        tabBar.tintColor = .clear
         let customFont = UIFont(name: "Nexa Demo", size: 10) ?? UIFont.systemFont(ofSize: 10)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: customFont, NSAttributedString.Key.foregroundColor: UIColor.purple], for: .normal)
     }

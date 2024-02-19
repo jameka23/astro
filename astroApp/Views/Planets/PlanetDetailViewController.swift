@@ -10,7 +10,7 @@ import UIKit
 
 class PlanetDetailViewController: UIViewController{
     var planet: Planet? {
-        didSet{
+        didSet {
             configure()
         }
     }
@@ -69,9 +69,12 @@ class PlanetDetailViewController: UIViewController{
     }
     
     func configure(){
-        nameLabel.text = planet?.name
-        descriptionLabel.text = planet?.description
-        planetImg.image = UIImage(named: (planet?.img)!)
+        if let planet = planet {
+            nameLabel.text = planet.name
+            descriptionLabel.text = planet.description
+            planetImg.image = UIImage(named: planet.img!)
+
+        }
     }
 
     
