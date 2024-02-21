@@ -21,7 +21,7 @@ class ZodiacsViewController: UIViewController {
         super.viewDidLoad()
         
         viewModel = ZodiacViewModel()
-      
+        setup()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -32,6 +32,22 @@ class ZodiacsViewController: UIViewController {
         }
     }
     
+    func setup(){
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.title = "Zodiacs"
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.register(ZodiacTableViewCell.self, forCellReuseIdentifier: ZodiacTableViewCell.reuseIdentifier)
+        self.view.addSubview(tableView)
+        
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+    }
 }
 extension ZodiacsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

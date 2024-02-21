@@ -89,8 +89,9 @@ class PlanetDetailViewController: UIViewController{
             planetImg.widthAnchor.constraint(equalToConstant: 200),
             planetImg.heightAnchor.constraint(equalToConstant: 200),
 
-            containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
-            containerView.widthAnchor.constraint(equalToConstant: 400),
+            containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            containerView.topAnchor.constraint(equalTo: view.topAnchor),
             containerView.heightAnchor.constraint(equalToConstant: 600),
             
             stackView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
