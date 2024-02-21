@@ -63,7 +63,6 @@ extension PlanetsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PlanetTableViewCell.reuseIdentifier, for: indexPath) as? PlanetTableViewCell else {
-//            fatalError("Dequeued cell not an instance of CustomTableViewCell.")
             return UITableViewCell()
         }
         

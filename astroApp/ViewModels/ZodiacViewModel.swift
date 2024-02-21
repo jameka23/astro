@@ -18,15 +18,15 @@ class ZodiacViewModel {
         }
     }
     
-    func qualityForZodiac(zodiacId: Int?) -> Quality? {
+    func qualityForZodiac(qualityID: Int?) -> Quality? {
         return AstrologyDataService.shared.loadData()?.Qualities.first(where: {
-            $0.id == zodiacId
+            $0.id == qualityID
         })
     }
     
-    func signForZodiac(zodiacId: Int?) -> Sign? {
+    func signForZodiac(signID: Int?) -> Sign? {
         return AstrologyDataService.shared.loadData()?.Signs.first(where: {
-            $0.id == zodiacId
+            $0.id == signID
         })
     }
 }

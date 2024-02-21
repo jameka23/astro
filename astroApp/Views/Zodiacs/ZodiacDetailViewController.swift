@@ -14,6 +14,9 @@ class ZodiacDetailViewController: UIViewController {
         }
     }
     
+    var quality: Quality?
+    var sign: Sign?
+    
     var zodiacImg: UIImageView = {
        let img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false
@@ -27,9 +30,17 @@ class ZodiacDetailViewController: UIViewController {
         return lbl
     }()
     
-    var rulingLabel: UILabel = {
+    var qualityLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
+        lbl.font = UIFont(name: "NexaDemo-Bold", size: 16)
+        return lbl
+    }()
+    
+    var signLabel: UILabel = {
+        let lbl = UILabel()
+        lbl.translatesAutoresizingMaskIntoConstraints = false
+        lbl.font = UIFont(name: "NexaDemo-Bold", size: 16)
         return lbl
     }()
     
@@ -68,11 +79,12 @@ class ZodiacDetailViewController: UIViewController {
     }
     
     func configure(){
-        if let planet = zodiac {
-            nameLabel.text = planet.name
-            descriptionLabel.text = planet.description
-            zodiacImg.image = UIImage(named: planet.img!)
-
+        if let zodiac = zodiac, let quality = quality, let sign = sign {
+            nameLabel.text = zodiac.name
+            descriptionLabel.text = zodiac.description
+            zodiacImg.image = UIImage(named: zodiac.img!)
+            qualityLabel.text = quality.name
+            signLabel.text = sign.name
         }
     }
 
@@ -80,6 +92,8 @@ class ZodiacDetailViewController: UIViewController {
     func setupStackView(){
         stackView.addArrangedSubview(zodiacImg)
         stackView.addArrangedSubview(nameLabel)
+        stackView.addArrangedSubview(qualityLabel)
+        stackView.addArrangedSubview(signLabel)
         view.addSubview(containerView)
         containerView.addSubview(stackView)
         containerView.addSubview(descriptionLabel)

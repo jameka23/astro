@@ -7,62 +7,122 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A533F8C1-0767-45C8-990A-4C6DB5348E09"
+            uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "astroApp/Views/Planets/PlanetDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "configure()"
-            landmarkType = "7">
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "nameLabel"
+            landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "A533F8C1-0767-45C8-990A-4C6DB5348E09 - 8928aa4559106087"
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - 669ea9dd113ed0c7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "astroApp.PlanetDetailViewController.setupStackView() -&gt; ()"
+                  symbolName = "closure #1 () -&gt; __C.UILabel in variable initialization expression of astroApp.PlanetDetailViewController.nameLabel : __C.UILabel"
                   moduleName = "astroApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetDetailViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "80">
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "28">
                </Location>
                <Location
-                  uuid = "A533F8C1-0767-45C8-990A-4C6DB5348E09 - 8928aa4559106087"
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - 5285d051ffc91068"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "astroApp.PlanetDetailViewController.setupStackView() -&gt; ()"
+                  symbolName = "astroApp.PlanetDetailViewController.nameLabel.getter : __C.UILabel"
                   moduleName = "astroApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetDetailViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "37">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
                </Location>
                <Location
-                  uuid = "A533F8C1-0767-45C8-990A-4C6DB5348E09 - 7b174fea441da0bd"
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - 31df2ff43020913c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "astroApp.PlanetDetailViewController.configure() -&gt; ()"
+                  symbolName = "astroApp.PlanetDetailViewController.nameLabel.setter : __C.UILabel"
                   moduleName = "astroApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetDetailViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "792">
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - a7c62dcdbd285267"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "astroApp.PlanetDetailViewController.nameLabel.modify : __C.UILabel"
+                  moduleName = "astroApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - c51166f2eb56ad8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "astroApp.PlanetDetailViewController.nameLabel.modify : __C.UILabel with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "astroApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamekaechols/Documents/astroApp/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - 6dfd7b31943c9f8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "astroApp.PlanetDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; astroApp.PlanetDetailViewController"
+                  moduleName = "astroApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - 8802593cfa8dd53d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "astroApp.PlanetDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;astroApp.PlanetDetailViewController&gt;"
+                  moduleName = "astroApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "224">
                </Location>
             </Locations>
          </BreakpointContent>

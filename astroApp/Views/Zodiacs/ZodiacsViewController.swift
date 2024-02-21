@@ -56,7 +56,13 @@ extension ZodiacsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let selected = viewModel?.zodiacsData[indexPath.row] {
-//            let zodiacDetailsVC = Zodiacs
+            let quality = viewModel?.qualityForZodiac(qualityID: selected.qualityID)
+            let sign = viewModel?.signForZodiac(signID: selected.signID)
+            let zodiacDetailsVC = ZodiacDetailViewController()
+            zodiacDetailsVC.zodiac = selected
+            zodiacDetailsVC.quality = quality
+            zodiacDetailsVC.sign = sign
+            navigationController?.pushViewController(zodiacDetailsVC, animated: true)
         }
     }
 }
