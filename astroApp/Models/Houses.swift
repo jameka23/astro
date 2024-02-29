@@ -10,7 +10,7 @@ import UIKit
 
 struct House: Codable {
     let id: Int?
-    let number: String?
+    let name: String?
     let description: String?
     let img: String?
 }
