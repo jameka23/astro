@@ -37,6 +37,8 @@
 		69BFB6372B82F1EF00AEFF2B /* ZodiacDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFB6362B82F1EF00AEFF2B /* ZodiacDetailViewController.swift */; };
 		69D43E642B9019AF00D69B25 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D43E632B9019AF00D69B25 /* HouseDetailViewController.swift */; };
 		69D43E662B9019E100D69B25 /* HousesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D43E652B9019E100D69B25 /* HousesTableViewCell.swift */; };
+		69D43E682B90286800D69B25 /* AspectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D43E672B90286800D69B25 /* AspectsTableViewCell.swift */; };
+		69D43E6A2B90287B00D69B25 /* AspectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D43E692B90287B00D69B25 /* AspectDetailViewController.swift */; };
 		69F4BA992B25163A00EA9C05 /* astrologyData.json in Resources */ = {isa = PBXBuildFile; fileRef = 69F4BA982B25163A00EA9C05 /* astrologyData.json */; };
 		69F4BA9B2B254D5400EA9C05 /* AstrologyDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F4BA9A2B254D5400EA9C05 /* AstrologyDataService.swift */; };
 		69F4BA9D2B25504700EA9C05 /* AstrologyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F4BA9C2B25504700EA9C05 /* AstrologyData.swift */; };
@@ -80,6 +82,8 @@
 		69BFB6362B82F1EF00AEFF2B /* ZodiacDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacDetailViewController.swift; sourceTree = "<group>"; };
 		69D43E632B9019AF00D69B25 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
 		69D43E652B9019E100D69B25 /* HousesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesTableViewCell.swift; sourceTree = "<group>"; };
+		69D43E672B90286800D69B25 /* AspectsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectsTableViewCell.swift; sourceTree = "<group>"; };
+		69D43E692B90287B00D69B25 /* AspectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectDetailViewController.swift; sourceTree = "<group>"; };
 		69F4BA982B25163A00EA9C05 /* astrologyData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = astrologyData.json; sourceTree = "<group>"; };
 		69F4BA9A2B254D5400EA9C05 /* AstrologyDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyDataService.swift; sourceTree = "<group>"; };
 		69F4BA9C2B25504700EA9C05 /* AstrologyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyData.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				69F4BA9F2B25744700EA9C05 /* AspectsViewController.swift */,
+				69D43E672B90286800D69B25 /* AspectsTableViewCell.swift */,
+				69D43E692B90287B00D69B25 /* AspectDetailViewController.swift */,
 			);
 			path = Aspects;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				69F4BAA22B25746200EA9C05 /* HousesViewController.swift in Sources */,
 				69F4BA9B2B254D5400EA9C05 /* AstrologyDataService.swift in Sources */,
 				696E21412B311EE4001C4504 /* CustomTabBarController.swift in Sources */,
+				69D43E6A2B90287B00D69B25 /* AspectDetailViewController.swift in Sources */,
 				69BFB62A2B82C98600AEFF2B /* HousesViewModel.swift in Sources */,
 				694BAAC92B04868A00D49DF1 /* Aspects.swift in Sources */,
 				694BAACC2B09A59400D49DF1 /* Quality.swift in Sources */,
@@ -330,6 +337,7 @@
 				69BFB6312B82CE4E00AEFF2B /* QualityViewModel.swift in Sources */,
 				694BAAD22B0AC8B200D49DF1 /* VCPreview.swift in Sources */,
 				6938E4032AA5512D00E37202 /* ZodiacsViewController.swift in Sources */,
+				69D43E682B90286800D69B25 /* AspectsTableViewCell.swift in Sources */,
 				69BFB6282B82C92100AEFF2B /* AspectsViewModel.swift in Sources */,
 				69D43E662B9019E100D69B25 /* HousesTableViewCell.swift in Sources */,
 				694BAACE2B09A5FD00D49DF1 /* Zodiacs.swift in Sources */,

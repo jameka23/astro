@@ -124,7 +124,83 @@
                   endingLineNumber = "24"
                   offsetFromSymbolStart = "224">
                </Location>
+               <Location
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - 669ea9dd113ed0c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UILabel in variable initialization expression of astroApp.PlanetDetailViewController.nameLabel : __C.UILabel"
+                  moduleName = "astroApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "29">
+               </Location>
+               <Location
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - c51166f2eb56ad8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "astroApp.PlanetDetailViewController.nameLabel.modify : __C.UILabel with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "astroApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamekaechols/Documents/astroApp/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - 6dfd7b31943c9f8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "astroApp.PlanetDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; astroApp.PlanetDetailViewController"
+                  moduleName = "astroApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "C61ADDA1-2A5D-4B3E-8CAC-0399A03E840C - 8802593cfa8dd53d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "astroApp.PlanetDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;astroApp.PlanetDetailViewController&gt;"
+                  moduleName = "astroApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamekaechols/Documents/astroApp/astroApp/Views/Planets/PlanetDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "280">
+               </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE71E334-D538-41AC-A0EF-BC462FC76B80"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "astroApp/Views/Planets/PlanetsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "setup()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -1,30 +1,29 @@
 //
-//  HouseDetailViewController.swift
+//  AspectDetailViewCell.swift
 //  astroApp
 //
 //  Created by Jameka Echols on 2/28/24.
 //
 
 import UIKit
-
-class HouseDetailViewController: UIViewController {
-    var house: House? {
+class AspectDetailViewController: UIViewController{
+    var aspect: Aspect? {
         didSet {
-            configure()
+            
         }
     }
     
-    var numberLabel: UILabel = {
+    var aspectImage: UIImageView = {
+        let img = UIImageView()
+        img.translatesAutoresizingMaskIntoConstraints = false
+        return img
+    }()
+    
+    var aspectLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = UIFont(name: "NexaDemo-Bold", size: 25)
         return lbl
-    }()
-    
-    var houseImg: UIImageView = {
-        let img = UIImageView()
-        img.translatesAutoresizingMaskIntoConstraints = false
-        return img
     }()
     
     var descriptionLabel: UILabel = {
@@ -53,6 +52,7 @@ class HouseDetailViewController: UIViewController {
         return view
     }()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -61,24 +61,23 @@ class HouseDetailViewController: UIViewController {
     }
     
     func configure(){
-        if let house = house {
-            numberLabel.text = house.name
-            descriptionLabel.text = house.description
-            houseImg.image = UIImage(named: house.img!)
-
+        if let aspect = aspect {
+            aspectLabel.text = aspect.name
+            descriptionLabel.text = aspect.description
+            aspectImage.image = UIImage(named: aspect.img!)
         }
     }
     
     func setupStackView(){
-        stackView.addArrangedSubview(houseImg)
-        stackView.addArrangedSubview(numberLabel)
+        stackView.addArrangedSubview(aspectImage)
+        stackView.addArrangedSubview(aspectLabel)
         view.addSubview(containerView)
         containerView.addSubview(stackView)
         containerView.addSubview(descriptionLabel)
         
         NSLayoutConstraint.activate([
-            houseImg.widthAnchor.constraint(equalToConstant: 200),
-            houseImg.heightAnchor.constraint(equalToConstant: 200),
+            aspectImage.widthAnchor.constraint(equalToConstant: 200),
+            aspectImage.heightAnchor.constraint(equalToConstant: 200),
 
             containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
