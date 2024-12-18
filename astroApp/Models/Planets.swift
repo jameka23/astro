@@ -14,4 +14,5 @@ struct Planet: Codable {
     let zodiacID: Int?
     let description: String?
     let img: String?
+    var Zodiac: Zodiac?
 }

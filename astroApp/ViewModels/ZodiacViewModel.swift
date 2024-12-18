@@ -29,4 +29,15 @@ class ZodiacViewModel {
             $0.id == signID
         })
     }
+    
+    func getZodiac(id: Int?) -> Zodiac? {
+        guard let id = id else {
+            return nil
+        }
+        
+        return zodiacsData.first(where: {
+            $0.id == id
+        } )
+        
+    }
 }

@@ -14,4 +14,6 @@ struct Zodiac: Codable {
     let qualityID: Int?
     let description: String?
     let img: String?
+    var sign: Sign?
+    var quality: Quality?
 }

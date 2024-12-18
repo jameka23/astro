@@ -16,7 +16,7 @@ class PlanetsViewController: UIViewController {
     }()
     
     private var viewModel: PlanetsViewModel? = nil
-    
+    private var zodiacViewModel: ZodiacViewModel? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +51,8 @@ class PlanetsViewController: UIViewController {
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
+    
+
 }
 
 extension PlanetsViewController: UITableViewDelegate, UITableViewDataSource {
