@@ -19,4 +19,14 @@ class AspectsViewModel {
             // Handle error as appropriate for your app
         }
     }
+    
+    func getAspect(id: Int?) -> Aspect?{
+        guard let id = id else {
+            return nil
+        }
+        
+        return aspectsData.first(where: {
+            $0.id == id
+        })
+    }
 }

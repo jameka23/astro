@@ -64,6 +64,8 @@ extension ZodiacsViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         let zodiac = viewModel.zodiacsData[indexPath.row]
+        
+        cell.zodiac = viewModel.getZodiac(id: zodiac.id)
         cell.zodiacLabel.text = zodiac.name
         cell.zodiacImage.image = UIImage(named: zodiac.img!)
         
@@ -72,12 +74,10 @@ extension ZodiacsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let selected = viewModel?.zodiacsData[indexPath.row] {
-            let quality = viewModel?.qualityForZodiac(qualityID: selected.qualityID)
-            let sign = viewModel?.signForZodiac(signID: selected.signID)
+
             let zodiacDetailsVC = ZodiacDetailViewController()
             zodiacDetailsVC.zodiac = selected
-            zodiacDetailsVC.quality = quality
-            zodiacDetailsVC.sign = sign
+
             navigationController?.pushViewController(zodiacDetailsVC, animated: true)
         }
     }

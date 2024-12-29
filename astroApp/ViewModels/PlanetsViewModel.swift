@@ -26,11 +26,12 @@ class PlanetsViewModel {
             return nil
         }
         
-        let planet =  planetsData.first(where: {
+        var planet =  planetsData.first(where: {
             $0.id == id
         })
+        let zodiac = ZodiacViewModel()
+        let zodiacData = zodiac.getZodiac(id: planet?.zodiacID)
         
-        var zodiacData = ZodiacViewModel().getZodiac(id: planet?.zodiacID)
         planet?.Zodiac = zodiacData
         
         return planet

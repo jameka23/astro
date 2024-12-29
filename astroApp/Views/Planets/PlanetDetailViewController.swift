@@ -24,13 +24,14 @@ class PlanetDetailViewController: UIViewController{
     var nameLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.font = UIFont(name: "NexaDemo-Bold", size: 25)
+        lbl.font = UIFont(name: "NexaDemo-Bold", size: 30)
         return lbl
     }()
     
     var rulingLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
+        lbl.font = UIFont(name: "NexaDemo-Bold", size: 25)
         return lbl
     }()
     
@@ -73,14 +74,22 @@ class PlanetDetailViewController: UIViewController{
             nameLabel.text = planet.name
             descriptionLabel.text = planet.description
             planetImg.image = UIImage(named: planet.img!)
-
+            
+            let zodiacVM = ZodiacViewModel()
+            let zodiac = zodiacVM.getZodiac(id: planet.zodiacID)
+            
+            guard let zodiacName = zodiac?.name else {
+                return
+            }
+            rulingLabel.text = "Ruled By: " + zodiacName
         }
     }
 
     
     func setupStackView(){
-        stackView.addArrangedSubview(planetImg)
         stackView.addArrangedSubview(nameLabel)
+        stackView.addArrangedSubview(planetImg)
+        stackView.addArrangedSubview(rulingLabel)
         view.addSubview(containerView)
         containerView.addSubview(stackView)
         containerView.addSubview(descriptionLabel)

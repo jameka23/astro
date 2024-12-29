@@ -17,4 +17,14 @@ class SignViewModel {
             print("Error: Could not load signs data.")
         }
     }
+    
+    func getSign(id: Int?) -> Sign?{
+        guard let id = id else {
+            return nil
+        }
+        
+        return signsData.first(where: {
+            $0.id == id
+        })
+    }
 }

@@ -16,7 +16,6 @@ class PlanetsViewController: UIViewController {
     }()
     
     private var viewModel: PlanetsViewModel? = nil
-    private var zodiacViewModel: ZodiacViewModel? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +42,7 @@ class PlanetsViewController: UIViewController {
         tableView.register(PlanetTableViewCell.self, forCellReuseIdentifier: PlanetTableViewCell.reuseIdentifier)
         
         self.view.addSubview(tableView)
-        tableView.separatorStyle = .none
+        
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -80,7 +79,7 @@ extension PlanetsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         if let selected = viewModel?.planetsData[indexPath.row] {
-            // insert nav logic here for PlanetDetailsView
+
             let planetDetailsVC = PlanetDetailViewController()
             planetDetailsVC.planet = selected
 

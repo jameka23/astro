@@ -9,6 +9,7 @@ import UIKit
 
 class ZodiacTableViewCell: UITableViewCell {
     static let reuseIdentifier = "ZodiacCell"
+    var zodiac: Zodiac? = nil
     
     var zodiacLabel: UILabel = {
        let lbl = UILabel()

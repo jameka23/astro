@@ -17,27 +17,22 @@ class ZodiacViewModel {
             print("Error: Counld not load zodiac data.")
         }
     }
-    
-    func qualityForZodiac(qualityID: Int?) -> Quality? {
-        return AstrologyDataService.shared.loadData()?.Qualities.first(where: {
-            $0.id == qualityID
-        })
-    }
-    
-    func signForZodiac(signID: Int?) -> Sign? {
-        return AstrologyDataService.shared.loadData()?.Signs.first(where: {
-            $0.id == signID
-        })
-    }
-    
+
     func getZodiac(id: Int?) -> Zodiac? {
         guard let id = id else {
             return nil
         }
         
-        return zodiacsData.first(where: {
+        var zodiac = zodiacsData.first(where: {
             $0.id == id
         } )
         
+        let quality = QualityViewModel().getQuality(id: zodiac?.qualityID)
+        let sign = SignViewModel().getSign(id: zodiac?.signID)
+        
+        zodiac?.quality = quality
+        zodiac?.sign = sign
+        
+        return zodiac
     }
 }

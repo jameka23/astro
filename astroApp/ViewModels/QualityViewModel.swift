@@ -17,4 +17,14 @@ class QualityViewModel {
             print("Error: Could not load qualities data.")
         }
     }
+    
+    func getQuality(id : Int?) -> Quality? {
+        guard let id = id else {
+            return nil
+        }
+        
+        return qualityData.first(where: {
+            $0.id == id
+        })
+    }
 }

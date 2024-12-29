@@ -14,9 +14,6 @@ class ZodiacDetailViewController: UIViewController {
         }
     }
     
-    var quality: Quality?
-    var sign: Sign?
-    
     var zodiacImg: UIImageView = {
        let img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false
@@ -79,12 +76,14 @@ class ZodiacDetailViewController: UIViewController {
     }
     
     func configure(){
-        if let zodiac = zodiac, let quality = quality, let sign = sign {
+        if let zodiac = zodiac {
             nameLabel.text = zodiac.name
             descriptionLabel.text = zodiac.description
             zodiacImg.image = UIImage(named: zodiac.img!)
-            qualityLabel.text = quality.name
-            signLabel.text = sign.name
+            
+            guard let quality = QualityViewModel().getQuality(id: zodiac.qualityID)?.name, let sign = SignViewModel().getSign(id: zodiac.signID)?.name else { return }
+            qualityLabel.text = "Quality: " + quality
+            signLabel.text = "Sign: " + sign
         }
     }
 
